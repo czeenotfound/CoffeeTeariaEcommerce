@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/CSS/main.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="assets/images/shop-solid.svg"/>
+    <title>CoffeeTearia</title>
+</head>
+<body>
+    <!-- =========== NavBar ==============  -->
+    <nav class="navbar navbar-expand-lg navbar-dark py-4 fixed-top sticky-top">
+        <div class="container">
+            <!-- Left nav container / branding  -->
+            <a class="navbar-brand d-flex justify-content-between align-items-center order-lg-0" href="index.html"><img src="assets/images/shop-solid.svg" alt="" width="40px">
+                <span class="logoName">CoffeeTearia</span>
+            </a>
+
+            <!-- right container / buttons -->
+            <div class="order-lg-2 navbtn">
+                <button type="button" class="btn position-relative">
+                    <i class="fa fa-search"></i>
+                </button>
+
+                <!-- wishlist -->
+                <button type="button" class="btn position-relative">
+                    <a href="wishlist.html"><i class="fa-solid fa-heart text-dark"></i></a>
+                    <span class="position-absolute top-0 start-100 translate-middle badge  bg-tertiary">2</span>           
+                </button>
+                
+                <!-- shoppingcart -->
+                <button type="button" class="btn position-relative">
+                    <a href="ShoppingCart.html"><i class="fa-solid fa-cart-shopping text-dark"></i> </a>   
+                    <span class="position-absolute top-0 start-100 translate-middle badge bg-tertiary">2</span>           
+                </button>
+                
+                <button type="button" class="btn position-relative">
+                    <a href="profile.html"><i class="fa-solid fa-user text-dark"></i></a>
+                </button>
+            </div>
+
+            <!-- Hamburgerrrr -->
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle = "collapse" data-bs-target = "#navMenu"><span class="navbar-toggler-icon"></span></button>
+
+            <!-- center / links -->
+            <div class="collapse navbar-collapse order-lg-1" id="navMenu">
+                <ul class="navbar-nav mx-auto text-center">
+                    <li class="nav-item px-2 py-2">
+                        <a href="index.html" class="nav-link text-light ">Home</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <a href="#bestSellers" class="nav-link text-light">Bestsellers</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <a href="#products" class="nav-link text-light ">Products</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <a href="#about" class="nav-link text-light">About</a>
+                    </li>
+                    <li class="nav-item px-2 py-2 border-0">
+                        <a href="#accessories" class="nav-link text-light">Accessories</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- =========== End of NavBar ==============  -->
+    
+    <section class="addtoCart">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col">
+                    <nav aria-label="breadcrumb" class="bg-light rounded-3 p-3 mb-3">
+                    <ol class="breadcrumb mb-0">
+                        <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none text-dark">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Shopping Cart</li>
+                    </ol>
+                    </nav>
+                </div>
+            </div>
+            <h1 class="fw-bold py-3 px-3">Shopping Cart</h1>
+            <div class="row d-flex justify-content-center my-4">
+                <div class="col-md-8">
+                    <div class="card mb-4">
+                        <div class="card-header py-3">
+                            <h5 class="mb-0">Cart - 1 item</h5>
+                        </div>
+
+                        <div class="card-body">
+                        <!-- Single item -->
+                            <div class="row">
+                                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                                <!-- Image -->
+                                <div class="productImg hover-overlay hover-zoom ripple rounded" data-mdb-ripple-color="light">
+                                    <img src="assets/images/grinders1.png"
+                                    class="w-100" alt="image" />
+                                    <a href="#">
+                                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                                    </a>
+                                </div>
+                                <!-- end of Image -->
+                                </div>
+                                    <div class="col-lg-5 col-md-6 mb-4 mb-lg-0">
+                                    <!-- Data -->
+                                    <p><strong>Xpreso Coffee Grinder</strong></p>
+                                    <p>Category: Grinder</p>
+
+                                    <!-- Action buttons -->
+                                    <button type="button" class="btn btn-primary btn-sm me-1 mb-2" data-mdb-toggle="tooltip"
+                                        title="Remove item">
+                                        <i class="fas fa-trash"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-danger btn-sm mb-2" data-mdb-toggle="tooltip"
+                                        title="Move to the Wishlist">
+                                        <i class="fas fa-heart"></i>
+                                    </button>
+                                <!-- Data -->
+                                </div>
+                
+                                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                                <!-- Quantity -->
+                                    <div class="d-flex mb-4" style="max-width: 300px">
+                                        <button class="btn btn-primary px-3 me-2"
+                                        onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                                        <i class="fas fa-minus"></i>
+                                        </button>
+                    
+                                        <div class="form-outline">
+                                        <input id="form1" min="0" name="quantity" value="1" type="number" class="form-control" />
+                                        <label class="form-label" for="form1">Quantity</label>
+                                        </div>
+                    
+                                        <button class="btn btn-primary px-3 ms-2"
+                                        onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                                        <i class="fas fa-plus"></i>
+                                        </button>
+                                    </div>
+                                <!-- end of Quantity -->
+                
+                                <!-- Price -->
+                                <p class="text-start text-md-center">
+                                    <strong>₱3,100</strong>
+                                </p>
+                                <!-- Price -->
+                                </div>
+                            </div>
+                            <!-- Single item -->
+            
+                            <hr class="my-4" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-header py-3">
+                            <h5 class="mb-0">Summary</h5>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-group list-group-flush">
+                                <li
+                                class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
+                                Products
+                                <span>₱3,100</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+                                Shipping
+                                <span>Free Shipping</span>
+                                </li>
+                                <li
+                                class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 mb-3">
+                                <div>
+                                    <strong>Total amount</strong>
+                                    <strong>
+                                    <p class="mb-0">(including VAT)</p>
+                                    </strong>
+                                </div>
+                                <span><strong>₱3,100</strong></span>
+                                </li>
+                            </ul>
+                            <a href="Checkout.html" type="button" class="btn btn-primary btn-lg btn-block text-white text-decoration-none">Go to checkout</a>
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <div class="card-body">
+                        <p><strong>Expected shipping delivery</strong></p>
+                        <p class="mb-0">02.19.2024 - 12.31.2025</p>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4 mb-lg-0">
+                        <div class="card-body">
+                        <p><strong>We accept</strong></p>
+                        <img class="me-2" width="65px" src="assets/images/paypal.png" alt="PayPal acceptance mark" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+
+    <!-- =========== Footer ============== -->
+    <footer class="bg-light py-5">
+        <div class="container">
+            <div class="">
+                <div class="col-md-6 col-lg-3">
+                    <a class="logoName fs-2 text-decoration-none brand text-dark" href="index.html"><img src="assets/images/shop-solid.svg" alt="" width="40px"> CoffeeTearia</a>
+                </div>
+            </div>
+            <hr class="mt-5">
+            <div class="row g-3">
+                <div class="col-md-6 col-lg-5">
+                    <p class="fs-4">Contact Us</p>
+                    <ul class="list-unstyled">
+                        <li class="my-3">
+                            <span>666 John Doe Rd, Boulevard, CO
+                                7000, Zamboanga City
+                            </span>
+                        </li>
+                        <li class="my-3">
+                            <span> +63662323122</span>
+                        </li>
+                        <li class="my-3">
+                            <span> coffeteariaMail@sample.com</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <p class="fs-4">My Account</p>
+                    <ul class="list-unstyled">
+                        <li class="my-3">
+                            <a href="SigninPage.html" class="text-dark text-decoration-none text-muted footer-link"><i class="fa-solid fa-chevron-right"></i> Profile</a>
+                        </li>
+                        <li class="my-3">
+                            <a href="SigninPage.html" class="text-dark text-decoration-none text-muted footer-link"><i class="fa-solid fa-chevron-right"></i> View Cart</a>
+                        </li>
+                        <li class="my-3">
+                            <a href="SigninPage.html" class="text-dark text-decoration-none text-muted footer-link"><i class="fa-solid fa-chevron-right"></i> Wishlist</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-3 socials">
+                    <p class="fs-4">Follow Us</p>
+                    <ul class="list-unstyled">
+                        <li class="my-3">
+                            <a href="#" class="text-decoration-none text-muted"><i class="fa-brands fa-facebook footer-link"></i></a>
+                        </li>
+                        <li class="my-3">
+                            <a href="#" class="text-decoration-none text-muted"><i class="fa-brands fa-x-twitter footer-link"></i></a>
+                        </li>
+                        <li class="my-3">
+                            <a href="#" class="text-decoration-none text-muted"><i class="fa-brands fa-instagram footer-link"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer> 
+   
+    <div class="card-footer text-center bg-dark text-white">
+        CoffeeTearia | Ecommerce
+    </div>
+
+    <!-- =========== End of Footer ============== -->
+
+    <button id="scroll-to-top" onclick="scrollToTop()"><i class="fa-solid fa-chevron-up"></i></button>
+
+    <!-- Jquery -->
+    <script src="assets/JS/jquery-3.7.1.js"></script>
+    <!-- Isotope filtering js-->
+    <script src="assets/JS/isotope.pkgd.js"></script>
+    <!-- JavaScript & bootstrap JS-->
+    <script src="assets/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/JS/script.js"></script>
+</body>
+</html>
